@@ -1,11 +1,11 @@
 //--------------------------------------------------------------------------------------------------
-//									DEMO APP
+//								Voxelized Cone Tracing
 //								  Colin Vaughan 
 //
-//
-//	Demo App includes selection of different lighting and material scenareos with
-//	multiple point lights, voxel destruction, and physics. The demo showcases the ECS pattern design 
-//  and a component / memory manager
+// My Attempt at Voxel Cone Tracing global illumination. Not sure how far I will get,
+// but it should be an intiresting experiment.	
+//	
+// 
 //	
 //---------------------------------------------------------------------------------------------------
 #include <iostream>
