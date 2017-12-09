@@ -1,0 +1,23 @@
+cmake_minimum_required(VERSION 3.0)
+project(Voxel_GI)
+
+add_subdirectory(GLRenderer)
+
+file(GLOB HEADERS "Voxel_GI/Include/*.h")
+file(GLOB SOURCES "Voxel_GI/Src/*.cpp")
+
+add_executable(Voxel_GI ${SOURCES} ${HEADERS})
+target_link_libraries(Voxel_GI GLRenderer)
+
+target_include_directories(Voxel_GI PUBLIC 
+		$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/Voxel_GI/Include>
+		$<INSTALL_INTERFACE:Include>
+		)
+		
+install(TARGETS Voxel_GI 
+		RUNTIME DESTINATION bin
+		ARCHIVE DESTINATION Lib
+		LIBRARY DESTINATION Lib
+		INCLUDES DESTINATION Include)
+		
+install(FILES ${HEADERS} DESTINATION Include/Voxel_GI)
