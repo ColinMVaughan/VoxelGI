@@ -5,6 +5,9 @@
 class Texture3D
 {
 public:
+	Texture3D();
+	~Texture3D();
+
 	void CreateTexture(GLint width, GLint height, GLint depth, GLenum sampleType = GL_LINEAR, bool mipMap = true)
 	{
 		//glGenBuffers(1, &m_Texture);
