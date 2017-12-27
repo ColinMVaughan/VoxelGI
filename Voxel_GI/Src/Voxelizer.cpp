@@ -1,4 +1,4 @@
-#include "GIRenderer.h"
+#include "Voxelizer.h"
 
 Voxelizer::Voxelizer()
 	:m_FinalFrame(1)
